@@ -88,7 +88,7 @@ body {
           position: relative;
           padding: 5px 0;
           transition: color 0.3s ease;
-          
+
           &::after {
             content: "";
             position: absolute;
@@ -102,7 +102,8 @@ body {
             transition: transform 0.3s ease;
           }
 
-          &:hover, &:focus {
+          &:hover,
+          &:focus {
             color: var(--white);
             &::after {
               transform: scaleX(1);
@@ -203,17 +204,17 @@ body {
 }
 
 .hero_1 {
-  height: 85vh; 
+  height: 85vh;
   width: 100%;
   background-image: url(../../images/fondo_v1.webp);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center; 
-  position: relative;  
+  background-position: center;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 80px; 
+  padding-top: 80px;
 
   .hero_1_text {
     width: 100%;
@@ -223,11 +224,11 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;   
-    gap: 20px; 
+    text-align: center;
+    gap: 20px;
 
     .h_t_intro {
-      font-family: "Orbitron", sans-serif; 
+      font-family: "Orbitron", sans-serif;
       font-size: 3.8rem;
       color: var(--white);
       margin: 0;
@@ -235,7 +236,7 @@ body {
       font-weight: 900;
       letter-spacing: -1px;
       line-height: 1.1;
-      text-shadow: 0 0 20px var(--red-glow); 
+      text-shadow: 0 0 20px var(--red-glow);
     }
 
     .h_sub_intro {
@@ -276,7 +277,6 @@ body {
   background-color: var(--black-2);
   display: flex;
   align-items: center;
-  border-bottom: 15px solid var(--gray);
 
   .h_2_carrusel {
     overflow: hidden;
@@ -312,7 +312,63 @@ body {
   0% {
     transform: translateX(0);
   }
-  100% {    
-    transform: translateX(-50%); 
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.hero_3 {
+  height: 70vh;
+  background-color: var(--black-3);
+  background-image: radial-gradient(var(--gray-3) 1px, transparent 1px);
+  background-size: 30px 30px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .h3_container {
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(2px);
+    width: 90%;
+    margin: 20px;
+    display: flex;
+    padding: 15px;
+    gap: 35px;
+    transition: all .35s ease;
+    .h3_izq {
+      display: flex;
+      width: 65%;
+      align-items: center;
+    }
+    .h3_izq img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 15px;
+    }
+    .h3_der {
+      display: flex;
+      width: 35%;
+      text-align: start;
+      align-items: center;
+      justify-content: center;
+    }
+    .h3_der h1 {
+      font-size: 2.5em;
+    }
+    .h3_der span {
+      font-size: 1.25em;
+    }
+  }
+  .h3_container:hover {
+    box-shadow:
+      0 0 15px var(--red-glow),
+      0 0 35px rgba(232, 0, 10, 0.25),
+      0 10px 30px rgba(0, 0, 0, 0.45);
+
+    transform: translateY(-4px);
+    transition: all 0.35s ease;
   }
 }
