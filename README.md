@@ -36,4 +36,4 @@ y tecnología de última generación.
 - Diseño responsivo con media queries
 
 ### Recursos usados:
-[Fondos CSS](https://www.magicpattern.design/tools/css-backgrounds)
+![Fondos CSS](https://www.magicpattern.design/tools/css-backgrounds)
