@@ -348,9 +348,10 @@ body {
       display: block;
       border-radius: 15px;
     }
+    
     .h3_der {
       display: flex;
-      width: 35%;
+      width: 70%;
       text-align: start;
       align-items: center;
       justify-content: center;
