@@ -9,4 +9,4 @@ Web creada en el curso de Taller de programacion WEB, por el grupo 04, UTP - Chi
 <img src="https://i.pinimg.com/originals/39/4f/50/394f50c2f154626f383e6ba7c4c8477c.gif" height="50%" width="auto"/>
 
 ### Recursos usados:
-![Fondos CSS](https://www.magicpattern.design/tools/css-backgrounds)
+[Fondos CSS](https://www.magicpattern.design/tools/css-backgrounds)
