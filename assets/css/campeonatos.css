@@ -53,7 +53,8 @@
 
 .camp_card img {
   width: 100%;
-  height: 250px;
+  height: auto;
+  max-height: 500px;
   display: block;
 }
 
@@ -79,7 +80,7 @@
   }
 
   .camp_card img {
-    height: 250px;
+    height: 80%;
   }
 }
 
@@ -102,6 +103,6 @@
   }
 
   .camp_card img {
-    height: 180px;
+    height: 80%;
   }
 }
