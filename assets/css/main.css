@@ -318,12 +318,13 @@ body {
 }
 
 .hero_3 {
-  height: auto;
+  height: 70vh;
   background-color: var(--black-3);
   background-image: radial-gradient(var(--gray-3) 1px, transparent 1px);
   background-size: 30px 30px;
   position: relative;
   overflow: hidden;
+  display: flex;
   align-items: center;
   justify-content: center;
   .h3_container {
@@ -338,7 +339,7 @@ body {
     transition: all .35s ease;
     .h3_izq {
       display: flex;
-      width: 55%;
+      width: 65%;
       align-items: center;
     }
     .h3_izq img {
@@ -350,7 +351,8 @@ body {
     
     .h3_der {
       display: flex;
-      width: 45%;
+      width: 35%;
+      width: 70%;
       text-align: start;
       align-items: center;
       justify-content: center;
@@ -505,11 +507,12 @@ body {
 .hero_3 {
   min-height: 70vh;
   height: auto;
+
   overflow: visible;
   overflow-x: hidden;
 
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
 
   padding: 60px 0;
@@ -518,20 +521,44 @@ body {
 .hero_3 .h3_container {
   box-sizing: border-box;
 
+  width: 90%;
+
   display: flex;
+  align-items: center;
+
   gap: 35px;
 
-  width: 90%;
+  padding: 20px;
+}
+
+.hero_3 .h3_izq,
+.hero_3 .h3_der {
+  flex: 1;
+}
+
+.hero_3 .h3_der {
+  display: flex;
+  align-items: center;
+}
+
+.hero_3 .h3_der_text {
+  width: 100%;
 }
 
 @media (max-width: 1024px) {
+
   .hero_3 .h3_container {
     width: 95%;
     gap: 24px;
   }
+
+  .hero_3 .h3_der h1 {
+    font-size: 2rem;
+  }
 }
 
 @media (max-width: 768px) {
+
   .hero_3 .h3_container {
     flex-direction: column;
 
@@ -539,11 +566,31 @@ body {
 
     margin: 16px;
 
-    padding: 14px;
+    padding: 16px;
+  }
+
+  .hero_3 .h3_izq,
+  .hero_3 .h3_der {
+    width: 100%;
+  }
+
+  .hero_3 .h3_der {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .hero_3 .h3_der h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero_3 .h3_der span {
+    font-size: 1rem;
+    line-height: 1.5;
   }
 }
 
 @media (max-width: 480px) {
+
   .hero_3 .h3_container {
     width: calc(100% - 24px);
 
@@ -553,41 +600,13 @@ body {
 
     gap: 12px;
   }
-}
 
-.hero_3 .h3_izq,
-.hero_3 .h3_der {
-  flex: 1;
-}
-
-@media (max-width: 768px) {
-  .hero_3 .h3_izq,
-  .hero_3 .h3_der {
-    width: 100%;
-  }
-
-  .hero_3 .h3_der {
-    text-align: center;
-  }
-}
-
-.hero_3 .h3_der h1 {
-  @media (max-width: 1024px) {
-    font-size: 2rem;
-  }
-
-  @media (max-width: 768px) {
-    font-size: 1.8rem;
-  }
-
-  @media (max-width: 480px) {
+  .hero_3 .h3_der h1 {
     font-size: 1.4rem;
     line-height: 1.2;
   }
-}
 
-.hero_3 .h3_der span {
-  @media (max-width: 480px) {
+  .hero_3 .h3_der span {
     font-size: 0.95rem;
   }
 }

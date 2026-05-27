@@ -1,0 +1,107 @@
+/* CAMPEONATOS */
+
+.campeonatos {
+  width: 100%;
+  padding: 60px 0;
+}
+
+.camp_titulo {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 50px;
+}
+
+.camp_categoria {
+  width: 90%;
+  margin: 0 auto 50px auto;
+}
+
+.camp_categoria h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  margin-top: 50px;
+}
+
+.camp_cards {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.camp_card {
+  flex: 1 1 300px;
+
+  background-color: rgba(0,0,0,.4);
+
+  border-radius: 15px;
+
+  overflow: hidden;
+
+  transition: .3s ease;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.camp_card:hover {
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 0 15px var(--red-glow),
+    0 0 35px rgba(232,0,10,.25);
+}
+
+.camp_card img {
+  width: 100%;
+  height: 250px;
+  display: block;
+}
+
+.camp_card h3 {
+  padding: 20px;
+  font-size: 1.5rem;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+  .camp_titulo {
+    font-size: 2.3rem;
+  }
+
+  .camp_categoria h2 {
+    font-size: 1.5rem;
+  }
+
+  .camp_cards {
+    flex-direction: column;
+  }
+
+  .camp_card img {
+    height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .camp_titulo {
+    font-size: 1.8rem;
+  }
+
+  .camp_categoria {
+    width: calc(100% - 24px);
+  }
+
+  .camp_categoria h2 {
+    font-size: 1.2rem;
+  }
+
+  .camp_card h3 {
+    font-size: 1.1rem;
+  }
+
+  .camp_card img {
+    height: 180px;
+  }
+}
