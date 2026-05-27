@@ -1,0 +1,173 @@
+.pretii_container{
+  min-height: 70vh;
+
+  background-color: var(--black-3);
+
+  background-image:
+    radial-gradient(var(--gray-3) 1px, transparent 1px);
+
+  background-size: 30px 30px;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  padding: 60px 0;
+}
+
+
+.pretti_wrapper{
+  width: 90%;
+
+  margin: 20px;
+
+  padding: 25px;
+
+  border-radius: 15px;
+
+  background-color: #0000004d;
+
+  backdrop-filter: blur(2px);
+
+  transition: all .35s ease;
+}
+
+.pretti_wrapper:hover{
+
+  box-shadow:
+    0 0 15px var(--red-glow),
+    0 0 35px #e8000a40,
+    0 10px 30px #00000073;
+
+  transform: translateY(-4px);
+}
+
+
+.pretti_info{
+  width: 100%;
+
+  text-align: center;
+
+  margin-bottom: 50px;
+}
+
+.pretti_info h1{
+  font-size: 3rem;
+
+  margin-bottom: 15px;
+}
+
+.pretti_info p{
+  width: 70%;
+
+  margin: auto;
+
+  font-size: 1.1rem;
+
+  line-height: 1.6;
+}
+
+.pretti_info a{
+  color: var(--white);
+
+  text-decoration: none;
+}
+
+
+
+.pretti_cards{
+  display: flex;
+
+  flex-wrap: wrap;
+
+  justify-content: center;
+
+  gap: 35px;
+}
+
+.pretti_card{
+  width: 30%;
+
+  border-radius: 15px;
+
+  overflow: hidden;
+
+  background-color: #00000066;
+
+  text-align: center;
+}
+
+.pretti_card img{
+  width: 100%;
+
+  height: 320px;
+
+  object-fit: cover;
+
+  display: block;
+}
+
+.pretti_card h2{
+  margin: 20px 15px 10px;
+
+  font-size: 1.5rem;
+
+  line-height: 1.3;
+}
+
+.pretti_card p{
+  margin-bottom: 20px;
+
+  font-size: 1.1rem;
+}
+
+
+@media(max-width:800px){
+
+  .pretii_container{
+    padding: 50px 0;
+  }
+
+  .pretti_wrapper{
+    width: calc(100% - 32px);
+
+    padding: 18px;
+  }
+
+  .pretti_info h1{
+    font-size: 2.2rem;
+  }
+
+  .pretti_info p{
+    width: 100%;
+
+    font-size: 1rem;
+  }
+
+  .pretti_cards{
+    gap: 20px;
+  }
+
+  .pretti_card{
+    width: 45%;
+  }
+
+  .pretti_card img{
+    height: 260px;
+  }
+
+  .pretti_card h2{
+    font-size: 1.3rem;
+  }
+
+}
+
+@media(max-width:600px){
+
+  .pretti_card{
+    width: 100%;
+  }
+
+}
