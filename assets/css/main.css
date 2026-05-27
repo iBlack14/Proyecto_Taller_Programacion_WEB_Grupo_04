@@ -338,7 +338,7 @@ body {
     transition: all .35s ease;
     .h3_izq {
       display: flex;
-      width: 65%;
+      width: 55%;
       align-items: center;
     }
     .h3_izq img {

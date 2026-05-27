@@ -1,101 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/main.css" />
-    <script src="assets/css/agrupamiento.js" defer></script>
-    <title>Salas - GameCenter</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/salas.css">
+  <script src="assets/css/js/agrupamiento.js" defer></script>
+  <title>Salas - GameCenter</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
+
 <body>
-    <header class="nav">
-      <div class="nav_contenedor">
-        <div class="nav_izquierda">
-          <a href="/"
-            ><img src="./images/svgs/logo.svg" alt="Logo Game Center"
-          /></a>
-        </div>
-        <nav class="nav_derecha">
-          <div class="menu_toggle">
-            <i class="fa-solid fa-bars"></i>
-          </div>
-          <ul class="nav_contenedor_rutas">
-            <li><a href="index.html">INICIO</a></li>
-            <li><a href="nosotros.html">NOSOTROS</a></li>
-            <li><a href="salas.html">SALAS</a></li>
-            <li><a href="promociones.html">PROMOCIONES</a></li>
-            <li><a href="galeria.html">GALERIA</a></li>
-            <li><a href="campeonatos.html">CAMPEONATOS</a></li>
-            <li><a href="contacto.html">CONTACTO</a></li>
-          </ul>
-        </nav>
+  <header class="nav">
+    <div class="nav_contenedor">
+      <div class="nav_izquierda">
+        <a href="/"><img src="./images/svgs/logo.svg" alt="Logo Game Center" /></a>
       </div>
-    </header>
-
-    <main class="hero_1">
-        <div class="hero_1_text">
-            <h1>SALAS MULTIPLAYER</h1>
-            <p>Contamos con 8 salas privadad diseñadas para grupos de 4 a 6 personas. Juega con tus 
-              amigos con la comodidad del salón de tu casa, sin filtros ni interrupciones
-            </p>
+      <nav class="nav_derecha">
+        <div class="menu_toggle">
+          <i class="fa-solid fa-bars"></i>
         </div>
-    </main>
+        <ul class="nav_contenedor_rutas">
+          <li><a href="index.html">INICIO</a></li>
+          <li><a href="nosotros.html">NOSOTROS</a></li>
+          <li><a href="salas.html">SALAS</a></li>
+          <li><a href="promociones.html">PROMOCIONES</a></li>
+          <li><a href="galeria.html">GALERIA</a></li>
+          <li><a href="campeonatos.html">CAMPEONATOS</a></li>
+          <li><a href="contacto.html">CONTACTO</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <section class="hero_3">
-      <div class="h3_container">
-        <div class="h3_der">
-          <h1> TECNOLOGÍA Y CONFORT</h1>
-          <ul>
-            <li>Consolas PlayStation 5</li>
-            <li>Consolas PlayStation 5</li>
-            <li>Servicio de snacks y bebidas</li>
-            <li>Seguridad total monitoreada por cámaras</li>
-            <li>Higiene garantizada con limpieza diaria</li>
-          </ul>
+  <main class="hero_1">
+    <div class="hero_1_text">
+      <h1>SALAS MULTIPLAYER</h1>
+      <p>Disponemos con 8 salas privadas con consolas de PlayStation 5 diseñadas para grupos de 4 a 6 personas y una
+        sala principal con 8 consolas de PlayStation 4.</p>
+      <p>Juega con tus amigos en un ambiente cómodo y acogedor, como si estuvieras en la sala de tu casa, sin filtros ni
+        interrupciones</p>
+    </div>
+  </main>
+
+
+  <div class="salas_container">
+    <div class="sala_principal">
+      <h1>Sala Principal</h1>
+      <img src="images/SalaPrincipal.jpg" alt="">
+    </div>
+
+    <div class="salas_privadas">
+      <h1>Salas Privadas</h1>
+      <div class="galeria_privadas">
+
+        <div class="sala_privada">
+          <img src="images/salasPrivadas/salapriv1.jpg" alt="">
+        </div>
+
+        <div class="sala_privada">
+          <img src="images/salasPrivadas/salapriv2.jpg" alt="">
+        </div>
+
+        <div class="sala_privada">
+          <img src="images/salasPrivadas/salapriv3.jpg" alt="">
+        </div>
+
+        <div class="sala_privada">
+          <img src="images/salasPrivadas/salapriv4.jpg" alt="">
+        </div>
+
+        <div class="sala_privada">
+          <img src="images/salasPrivadas/salapriv5.jpg" alt="">
+        </div>
+
+        <div class="sala_privada">
+          <img src="images/salasPrivadas/salapriv6.jpg" alt="">
+        </div>
+
+        <div class="sala_privada">
+          <img src="images/salasPrivadas/salapriv7.jpg" alt="">
+        </div>
+
+        <div class="sala_privada">
+          <img src="images/salasPrivadas/salapriv8.jpg" alt="">
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════ FOOTER ═══════════ -->
+  <footer class="footer">
+    <div class="footer_container">
+      <div class="footer_top">
+        <div class="footer_brand">
+          <h1>GAME CENTER</h1>
+          <p></p>
+        </div>
+
+        <div class="footer_nav">
+          <h2>Navegación</h2>
+          <div class="f_nav_rutas">
+            <a href="index.html">INICIO</a>
+            <a href="nosotros.html">NOSOTROS</a>
+            <a href="salas.html">SALAS</a>
+            <a href="promociones.html">PROMOCIONES</a>
+            <a href="galeria.html">GALERIA</a>
+            <a href="campeonatos.html">CAMPEONATOS</a>
+            <a href="contacto.html">CONTACTO</a>
+          </div>
+        </div>
+
+        <div class="footer_social">
+          <h2>Redes Sociales</h2>
+          <div class="social_links">
+            <a href="https://www.facebook.com/share/1PWC5sHtrt/">Facebook</a>
+            <a href="https://www.tiktok.com/@gamecenterchiclayo?_r=1&_t=ZS-96dxiSJsdGP">TikTok</a>
+          </div>
         </div>
       </div>
-    </section>
 
-    <!-- ═══════════ FOOTER ═══════════ -->
-    <footer class="footer">
-      <div class="footer_container">
-        <div class="footer_top">
-          <div class="footer_brand">
-            <h1>GAME CENTER</h1>
-            <p></p>
-          </div>
-
-          <div class="footer_nav">
-            <h2>Navegación</h2>
-            <div class="f_nav_rutas">
-              <a href="index.html">INICIO</a>  
-              <a href="nosotros.html">NOSOTROS</a>
-              <a href="salas.html">SALAS</a>
-              <a href="promociones.html">PROMOCIONES</a>
-              <a href="galeria.html">GALERIA</a>
-              <a href="campeonatos.html">CAMPEONATOS</a>
-              <a href="contacto.html">CONTACTO</a>
-            </div>
-          </div>
-
-          <div class="footer_social">
-            <h2>Redes Sociales</h2>
-            <div class="social_links">
-              <a href="https://www.facebook.com/share/1PWC5sHtrt/">Facebook</a>
-              <a href="https://www.tiktok.com/@gamecenterchiclayo?_r=1&_t=ZS-96dxiSJsdGP">TikTok</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="footer_bottom">
-          <p>&copy; 2026 Game Center — Todos los derechos reservados</p>
-          <p>Hecho con pasión para la comunidad gamer</p>
-        </div>
+      <div class="footer_bottom">
+        <p>&copy; 2026 Game Center — Todos los derechos reservados</p>
+        <p>Hecho con pasión para la comunidad gamer</p>
       </div>
-      <div class="brand">
-        <img src="./images/svgs/gamecenter.svg" alt="Game Center" />
-      </div>
-    </footer>
+    </div>
+    <div class="brand">
+      <img src="./images/svgs/gamecenter.svg" alt="Game Center" />
+    </div>
+  </footer>
 </body>
+
 </html>

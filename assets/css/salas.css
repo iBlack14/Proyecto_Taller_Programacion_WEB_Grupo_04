@@ -1,0 +1,59 @@
+body{
+    margin: 0 auto;
+}
+
+.salas_container{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+
+.sala_principal h1,
+.salas_privadas h1{
+    text-align: center;
+    padding: 20px;
+}
+
+.sala_principal img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.galeria_privadas{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.sala_privada{
+    width: 100%;
+}
+
+.sala_privada img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+@media (min-width: 600px){
+
+    .sala_privada{
+        width: 45%;
+    }
+
+}
+
+@media (min-width: 800px){
+
+    .sala_privada{
+        width: 31%;
+    }
+
+    .salas_container{
+        width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
