@@ -1,108 +1,129 @@
-/* CAMPEONATOS */
+/* ═══════════ CAMPEONATOS ═══════════ */
 
 .campeonatos {
   width: 100%;
   padding: 60px 0;
+  background-color: var(--black);
 }
 
 .camp_titulo {
+  font-family: "Orbitron", sans-serif;
   text-align: center;
   font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: 3px;
+  text-shadow: 0 0 20px var(--red-glow);
   margin-bottom: 50px;
+
+  @media (max-width: 768px) {
+    font-size: 2.3rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+  }
 }
 
 .camp_categoria {
   width: 90%;
   margin: 0 auto 50px auto;
-}
 
-.camp_categoria h2 {
-  font-size: 2rem;
-  margin-bottom: 10px;
-  margin-top: 50px;
-}
-
-.camp_cards {
-  display: flex;
-  gap: 30px;
-  flex-wrap: wrap;
-}
-
-.camp_card {
-  flex: 1 1 300px;
-
-  background-color: rgba(0,0,0,.4);
-
-  border-radius: 15px;
-
-  overflow: hidden;
-
-  transition: .3s ease;
-
-  display: flex;
-  flex-direction: column;
-}
-
-.camp_card:hover {
-  transform: translateY(-5px);
-
-  box-shadow:
-    0 0 15px var(--red-glow),
-    0 0 35px rgba(232,0,10,.25);
-}
-
-.camp_card img {
-  width: 100%;
-  height: auto;
-  max-height: 500px;
-  display: block;
-}
-
-.camp_card h3 {
-  padding: 20px;
-  font-size: 1.5rem;
-}
-
-/* RESPONSIVE */
-
-@media (max-width: 768px) {
-
-  .camp_titulo {
-    font-size: 2.3rem;
-  }
-
-  .camp_categoria h2 {
-    font-size: 1.5rem;
-  }
-
-  .camp_cards {
-    flex-direction: column;
-  }
-
-  .camp_card img {
-    height: 80%;
-  }
-}
-
-@media (max-width: 480px) {
-
-  .camp_titulo {
-    font-size: 1.8rem;
-  }
-
-  .camp_categoria {
+  @media (max-width: 480px) {
     width: calc(100% - 24px);
   }
 
-  .camp_categoria h2 {
-    font-size: 1.2rem;
+  h2 {
+    font-family: "Orbitron", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--red);
+    margin-bottom: 20px;
+    margin-top: 50px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--red-border);
+
+    @media (max-width: 768px) {
+      font-size: 1.2rem;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 1rem;
+    }
+  }
+}
+
+.camp_cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.camp_card {
+  background-color: var(--black-3);
+  border: 1px solid var(--gray);
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    border-color: var(--red-border);
+    box-shadow:
+      0 0 15px var(--red-glow),
+      0 0 35px rgba(232, 0, 10, 0.25),
+      0 10px 30px rgba(0, 0, 0, 0.5);
   }
 
-  .camp_card h3 {
-    font-size: 1.1rem;
+  img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
   }
 
-  .camp_card img {
-    height: 80%;
+  &:hover img {
+    transform: scale(1.04);
   }
+
+  h3 {
+    font-family: "Orbitron", sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 20px;
+    color: var(--white);
+    line-height: 1.4;
+
+    @media (max-width: 480px) {
+      font-size: 0.9rem;
+    }
+  }
+}
+.camp_card_info {
+  padding: 16px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.camp_badge {
+  display: inline-block;
+  width: fit-content;
+  background-color: var(--red);
+  color: var(--white);
+  font-family: "Orbitron", sans-serif;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding: 3px 10px;
+  border-radius: 4px;
 }

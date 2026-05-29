@@ -1,141 +1,177 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/campeonatos.css" />
+    <script src="assets/js/agrupamiento.js" defer></script>
+    <script src="assets/js/scroll.js"></script>
+    <title>Campeonatos - GameCenter</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./assets/css/main.css" />
-  <link rel="stylesheet" href="assets/css/campeonatos.css">
-  <script src="assets/css/js/agrupamiento.js" defer></script>
-  <title>Campeonatos - GameCenter</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-
-</head>
-
-<body>
-  <header class="nav">
-    <div class="nav_contenedor">
-      <div class="nav_izquierda">
-        <a href="/"><img src="./images/svgs/logo.svg" alt="Logo Game Center" /></a>
+  <body>
+    <header class="nav">
+      <div class="nav_contenedor">
+        <div class="nav_izquierda">
+          <a href="/"
+            ><img src="./images/svgs/logo.svg" alt="Logo Game Center"
+          /></a>
+        </div>
+        <nav class="nav_derecha">
+          <div class="menu_toggle">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <ul class="nav_contenedor_rutas">
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="nosotros.html">NOSOTROS</a></li>
+            <li><a href="salas.html">SALAS</a></li>
+            <li><a href="promociones.html">PROMOCIONES</a></li>
+            <li><a href="galeria.html">GALERIA</a></li>
+            <li><a href="campeonatos.html">CAMPEONATOS</a></li>
+            <li><a href="contacto.html">CONTACTO</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav class="nav_derecha">
-        <div class="menu_toggle">
-          <i class="fa-solid fa-bars"></i>
-        </div>
-        <ul class="nav_contenedor_rutas">
-          <li><a href="index.html">INICIO</a></li>
-          <li><a href="nosotros.html">NOSOTROS</a></li>
-          <li><a href="salas.html">SALAS</a></li>
-          <li><a href="promociones.html">PROMOCIONES</a></li>
-          <li><a href="galeria.html">GALERIA</a></li>
-          <li><a href="campeonatos.html">CAMPEONATOS</a></li>
-          <li><a href="contacto.html">CONTACTO</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    </header>
 
-  <main class="hero_1">
-    <div class="hero_1_text">
-      <h1>TORNEOS Y COMPETENCIAS</h1>
-      <p>
-        Demuestra tu nivel en nuestros eventos periódicos ¡Ven y atrevete a participar por premios en efectivo!
-      </p>
-    </div>
-  </main>
-
-  <section class="hero_3">
-    <div class="h3_container">
-      <div class="h3_der">
-        <div class="h3_der_text">
-          <h1>PRÓXIMOS EVENTOS</h1>
-          <span>Mantente atento a nuestras redes sociales en <strong>TikTok y Facebook</strong> para las fechas de
-            inscripción de los torneos que se realizarán en el local o donde este participando Game Center</span>
-        </div>
+    <main class="hero_1">
+      <div class="hero_1_text">
+        <h1 class="h_t_intro">TORNEOS Y COMPETENCIAS</h1>
+        <p class="h_sub_intro">
+          Demuestra tu nivel en nuestros eventos periódicos. ¡Atrévete a
+          participar por premios en efectivo!
+        </p>
       </div>
-    </div>
-  </section>
+    </main>
 
-  <section class="campeonatos">
-    <h1 class="camp_titulo">CAMPEONATOS</h1>
-    <div class="camp_categoria">
-      <h2>RETROS</h2>
-      <div class="camp_cards">
-        <div class="camp_card">
-          <img src="./images/campeonatos/1conE21.jpg" alt="eFootball 2021">
-          <h3>eFootball 2021</h3>
-        </div>
-      </div>
-    </div>
-
-    <div class="camp_categoria">
-      <h2>ACTUALES</h2>
-      <div class="camp_cards">
-        <div class="camp_card">
-          <img src="./images/campeonatos/1conE26.jpg" alt="eFootball 2026">
-          <h3>eFootball 2026</h3>
-        </div>
-        <div class="camp_card">
-          <img src="./images/campeonatos/1conFIFA.jpg" alt="FIFA">
-          <h3>FIFA 2026</h3>
-        </div>
-      </div>
-    </div>
-
-    <div class="camp_categoria">
-      <h2>COOPERAMOS EN CAMPEONATOS NACIONALES JUNTO A LA UTP</h2>
-      <div class="camp_cards">
-        <div class="camp_card">
-          <img src="./images/campeonatos/2conUTP.jpg" alt="Campeonato UTP">
-          <h3>Torneos Nacionales UTP</h3>
-        </div>
-      </div>
-    </div>
-
-  </section>
-
-
-
-  <!-- ═══════════ FOOTER ═══════════ -->
-  <footer class="footer">
-    <div class="footer_container">
-      <div class="footer_top">
-        <div class="footer_brand">
-          <h1>GAME CENTER</h1>
-          <p></p>
-        </div>
-
-        <div class="footer_nav">
-          <h2>Navegación</h2>
-          <div class="f_nav_rutas">
-            <a href="index.html">INICIO</a>
-            <a href="nosotros.html">NOSOTROS</a>
-            <a href="salas.html">SALAS</a>
-            <a href="promociones.html">PROMOCIONES</a>
-            <a href="galeria.html">GALERIA</a>
-            <a href="campeonatos.html">CAMPEONATOS</a>
-            <a href="contacto.html">CONTACTO</a>
+    <section class="hero_3">
+      <div class="h3_container">
+        <div class="h3_der">
+          <div class="h3_der_text">
+            <h1>PRÓXIMOS EVENTOS</h1>
+            <span>
+              Mantente atento a nuestras redes sociales en
+              <strong>TikTok y Facebook</strong> para las fechas de inscripción
+              de los torneos que se realizarán en el local o donde esté
+              participando Game Center.
+            </span>
           </div>
         </div>
+      </div>
+    </section>
 
-        <div class="footer_social">
-          <h2>Redes Sociales</h2>
-          <div class="social_links">
-            <a href="https://www.facebook.com/share/1PWC5sHtrt/">Facebook</a>
-            <a href="https://www.tiktok.com/@gamecenterchiclayo?_r=1&_t=ZS-96dxiSJsdGP">TikTok</a>
+    <section class="campeonatos">
+      <h1 class="camp_titulo">CAMPEONATOS</h1>
+
+      <div class="camp_categoria">
+        <h2>RETROS</h2>
+        <div class="camp_cards">
+          <div class="camp_card">
+            <img
+              src="./images/campeonatos/1conE21.jpg"
+              alt="eFootball 2021"
+              loading="lazy"
+            />
+            <div class="camp_card_info">
+              <span class="camp_badge">RETRO</span>
+              <h3>eFootball 2021</h3>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="footer_bottom">
-        <p>&copy; 2026 Game Center — Todos los derechos reservados</p>
-        <p>Hecho con pasión para la comunidad gamer</p>
+      <div class="camp_categoria">
+        <h2>ACTUALES</h2>
+        <div class="camp_cards">
+          <div class="camp_card">
+            <img
+              src="./images/campeonatos/1conE26.jpg"
+              alt="eFootball 2026"
+              loading="lazy"
+            />
+            <div class="camp_card_info">
+              <span class="camp_badge">ACTUAL</span>
+              <h3>eFootball 2026</h3>
+            </div>
+          </div>
+          <div class="camp_card">
+            <img
+              src="./images/campeonatos/1conFIFA.jpg"
+              alt="FIFA 2026"
+              loading="lazy"
+            />
+            <div class="camp_card_info">
+              <span class="camp_badge">ACTUAL</span>
+              <h3>FIFA 2026</h3>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="brand">
-      <img src="./images/svgs/gamecenter.svg" alt="Game Center" />
-    </div>
-  </footer>
-</body>
 
+      <div class="camp_categoria">
+        <h2>CAMPEONATOS NACIONALES</h2>
+        <div class="camp_cards">
+          <div class="camp_card">
+            <img
+              src="./images/campeonatos/2conUTP.jpg"
+              alt="Campeonato UTP"
+              loading="lazy"
+            />
+            <div class="camp_card_info">
+              <span class="camp_badge">NACIONAL</span>
+              <h3>Torneos Nacionales UTP</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ═══════════ FOOTER ═══════════ -->
+    <footer class="footer">
+      <div class="footer_container">
+        <div class="footer_top">
+          <div class="footer_brand">
+            <h1>GAME CENTER</h1>
+            <p></p>
+          </div>
+
+          <div class="footer_nav">
+            <h2>Navegación</h2>
+            <div class="f_nav_rutas">
+              <a href="index.html">INICIO</a>
+              <a href="nosotros.html">NOSOTROS</a>
+              <a href="salas.html">SALAS</a>
+              <a href="promociones.html">PROMOCIONES</a>
+              <a href="galeria.html">GALERIA</a>
+              <a href="campeonatos.html">CAMPEONATOS</a>
+              <a href="contacto.html">CONTACTO</a>
+            </div>
+          </div>
+
+          <div class="footer_social">
+            <h2>Redes Sociales</h2>
+            <div class="social_links">
+              <a href="https://www.facebook.com/share/1PWC5sHtrt/">Facebook</a>
+              <a
+                href="https://www.tiktok.com/@gamecenterchiclayo?_r=1&_t=ZS-96dxiSJsdGP"
+                >TikTok</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="footer_bottom">
+          <p>&copy; 2026 Game Center — Todos los derechos reservados</p>
+          <p>Hecho con pasión para la comunidad gamer</p>
+        </div>
+      </div>
+      <div class="brand">
+        <img src="./images/svgs/gamecenter.svg" alt="Game Center" />
+      </div>
+    </footer>
+  </body>
 </html>

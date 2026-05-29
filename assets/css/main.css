@@ -321,8 +321,7 @@ body {
 }
 
 .hero_3 {
-  height: 60vh;
-  background-color: var(--black-3);
+  background-color: var(--black-2);
   background-image: radial-gradient(var(--gray-3) 1px, transparent 1px);
   background-size: 30px 30px;
   position: relative;
@@ -498,7 +497,6 @@ body {
 
 /* HERO 3 */
 .hero_3 {
-  min-height: 70vh;
   height: auto;
 
   overflow: visible;
@@ -633,7 +631,7 @@ body {
 
 .hero_4 {
   width: 100%;
-  background-color: var(--black-2);  
+  background-color: var(--black-2);
   .h4_container {
     max-width: 1300px;
     margin: 0 auto;
@@ -641,7 +639,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 24px;    
+    gap: 24px;
     @media (max-width: 768px) {
       padding: 24px 20px;
       gap: 20px;
@@ -752,6 +750,169 @@ body {
 
         @media (max-width: 480px) {
           font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+
+.hero_8 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--black-3);
+
+  @media (max-width: 768px) {
+    height: auto;
+  }
+
+  .h8_container {
+    width: 95%;
+    height: 90vh;
+    border-radius: 20px;
+    display: flex;
+    overflow: hidden;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      height: auto;
+      margin: 20px 0;
+    }
+
+    .h8_izq {
+      width: 60%;
+      padding: 50px 60px;
+      background-color: var(--red-dark);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 24px;
+
+      @media (max-width: 768px) {
+        width: 100%;
+        padding: 40px 24px;
+        order: 1;
+      }
+
+      .etiqueta {
+        font-family: "Orbitron", sans-serif;
+        font-size: 0.85rem;
+        font-weight: 700;
+        letter-spacing: 4px;
+        color: rgba(255, 255, 255, 0.55);
+      }
+
+      h1 {
+        font-family: "Orbitron", sans-serif;
+        font-size: clamp(2rem, 4vw, 4.5rem);
+        font-weight: 900;
+        line-height: 1.1;
+        color: var(--white);
+      }
+
+      .h8_sub {
+        font-size: clamp(1rem, 1.4vw, 1.4rem);
+        color: rgba(255, 255, 255, 0.7);
+        line-height: 1.7;
+        max-width: 520px;
+        font-weight: 500;
+      }
+
+      .h8_btn {
+        display: inline-block;
+        width: fit-content;
+        padding: 16px 32px;
+        background-color: transparent;
+        color: var(--white);
+        font-family: "Orbitron", sans-serif;
+        font-size: 0.85rem;
+        font-weight: 900;
+        letter-spacing: 1px;
+        text-decoration: none;
+        border-radius: 8px;
+        border: 2px solid var(--white);
+        transition:
+          background-color 0.3s ease,
+          color 0.3s ease;
+
+        &:hover {
+          background-color: var(--white);
+          color: var(--red-dark);
+        }
+
+        @media (max-width: 768px) {
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+
+    .h8_der {
+      width: 40%;
+      background-color: var(--black-4);
+
+      @media (max-width: 768px) {
+        width: 100%;
+        order: 2;
+      }
+
+      .h8_der_container {
+        display: grid;
+        grid-template-rows: repeat(auto-fit, 1fr);
+        height: 100%;
+
+        @media (max-width: 768px) {
+          grid-template-rows: unset;
+          grid-template-columns: 1fr;
+        }
+
+        .h8_card {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding: 0 40px;
+          border-bottom: 1px solid var(--gray);
+          transition: background-color 0.3s ease;
+
+          &:last-child {
+            border-bottom: none;
+          }
+
+          &:hover {
+            background-color: var(--gray);
+          }
+
+          @media (max-width: 768px) {
+            padding: 28px 24px;
+          }
+
+          h3 {
+            font-family: "Orbitron", sans-serif;
+            font-size: 1.25rem;
+            font-weight: 700;
+            letter-spacing: 3px;
+            color: var(--red);
+            margin-bottom: 10px;
+          }
+
+          p,
+          a {
+            font-size: clamp(1rem, 1.3vw, 1.3rem);
+            color: var(--white-2);
+            line-height: 1.6;
+            text-decoration: none;
+            transition: color 0.2s ease;
+          }
+
+          strong {
+            color: var(--white);
+          }
+
+          a:hover {
+            color: var(--white);
+          }
         }
       }
     }
