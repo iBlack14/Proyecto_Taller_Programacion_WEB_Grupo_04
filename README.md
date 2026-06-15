@@ -56,6 +56,7 @@ La plataforma proyecta la identidad visual de la marca (rojo y negro) y destaca 
 |--------|
 | AREVALO CASTRO, JESUS JEANPEAR |
 | PERALTA CHAVARRY, JESUS ANTONIO |
+| HUANCAS CRUZ, ALONSO YOSET |
 | Alessandro Salazar S. |
 
 ---
