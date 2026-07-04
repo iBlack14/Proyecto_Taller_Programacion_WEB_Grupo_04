@@ -96,5 +96,6 @@ correo.addEventListener("input", () => {
 });
 
 telefono.addEventListener("input", () => {
+    telefono.value = telefono.value.replace(/\D/g, "");
     localStorage.setItem("telefono", telefono.value);
 });
