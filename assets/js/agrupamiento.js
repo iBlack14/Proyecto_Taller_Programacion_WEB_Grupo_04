@@ -9,7 +9,7 @@ if (toggle && menu) {
 
 // Inyectar botón flotante de WhatsApp
 const whatsappButton = `
-  <a href="https://wa.me/51953533175?text=Hola!%20Quisiera%20obtener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20las%20salas%20y%20promociones%20de%20GameCenter." 
+  <a href="https://wa.me/51953233175?text=Hola!%20Quisiera%20obtener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20las%20salas%20y%20promociones%20de%20GameCenter." 
      class="whatsapp-float" 
      target="_blank" 
      rel="noopener noreferrer" 
@@ -21,4 +21,4 @@ const whatsappButton = `
   </a>
 `;
 
-document.body.insertAdjacentHTML("beforeend", whatsappButton);
+document.body.insertAdjacentHTML("beforeend", whatsappButton);
